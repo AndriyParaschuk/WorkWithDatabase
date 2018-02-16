@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script src="lib/jquery-3.3.1.min.js"></script>
+    <script src="lib/glm-ajax.js"></script>
+    <link rel="stylesheet" href="lib/bootstrap/css/bootstrap.min.css">
+    <script src="lib/bootstrap/js/bootstrap.min.js"></script>
+</head>
+    <title>Database</title>
+</head>
+<body>
+    <script src="GetDataAjax.js"></script>
+
+    <div align="center">
+        <button class="buttonOut">Print</button>
+        <input class="search" id="search">
+
+        <div class="navbar navbar-left" id="ordermenu" align>
+            <ul class="nav navbar-nav">
+                <button class="dropdown" class=" btn btn-default dropdown-toggle" id="order" data-toggle="dropdown">
+                            Order
+                </button>
+                <ul class="dropdown-menu">
+                    <div class="alphabetOrder">A-Z</div>
+                    <div class="otherOrder">Z-A</div>
+                </ul>
+            </ul>
+        </div>
+
+        <div class="navbar navbar-right" id="countmenu">
+            <ul>
+                <button class="dropdown" class=" btn btn-default dropdown-toggle" id="count" data-toggle="dropdown">
+                    Count
+                </button>
+                <ul class="dropdown-menu">
+                    <div class="index10">10</div>
+                    <div class="index25">25</div>
+                    <div class="index50">50</div>
+                </ul>
+            </ul>
+        </div>
+    </div>
+    <input type="checkbox">
+    <table id="display" class="display"></table>
+
+    <div align="center">
+        <button class="buttonPrevious">Previous</button>
+        <button class="buttonNext">Next</button>
+    </div>
+</body>
+</html>
